@@ -1,0 +1,86 @@
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Rockwell, Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 0 5vw;
+  font-size: 1rem;
+}
+
+header, section, footer {
+  background: #fff;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
+  text-align: center;
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.profile-img {
+  width: 30vw;
+  height: 30vw;
+  max-width: 120px;
+  max-height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Responsividade: smartphones */
+@media (max-width: 600px) {
+  header, section, footer {
+    margin: 10px auto;
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  body {
+    font-size: 0.9rem;
+  }
+}
+
+/* Responsividade: tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .profile-img {
+    width: 25vw;
+    height: 25vw;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+}
